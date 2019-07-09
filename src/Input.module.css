@@ -1,0 +1,27 @@
+
+.Line {
+  margin-bottom: 25px;
+}
+
+.Label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.Input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  outline: none;
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import classes from './App.module.css';
-import { Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
+import Input from "./Input";
 
 function App() {
   const [state, setState] = useState({
@@ -53,47 +54,9 @@ function App() {
           
           return (
             <Form className={classes.Form}>
-              <div className={classes.Line}>
-                <Field name={'price'}>
-                  {({ field }) => (
-                    <>
-                      <label className={classes.Label}>Price</label>
-                      <input
-                        className={classes.Input}
-                        type={'number'}
-                        {...field}/>
-                    </>
-                  )}
-                </Field>
-              </div>
-              
-              <div className={classes.Line}>
-                <Field name={'hours'}>
-                  {({ field }) => (
-                    <>
-                      <label className={classes.Label}>Hours</label>
-                      <input
-                        className={classes.Input}
-                        type={'number'}
-                        {...field}/>
-                    </>
-                  )}
-                </Field>
-              </div>
-              
-              <div className={classes.Line}>
-                <Field name={'minutes'}>
-                  {({ field }) => (
-                    <>
-                      <label className={classes.Label}>Minutes</label>
-                      <input
-                        className={classes.Input}
-                        type={'number'}
-                        {...field}/>
-                    </>
-                  )}
-                </Field>
-              </div>
+              <Input name={'price'} label={'Price'}/>
+              <Input name={'hours'} label={'Hours'}/>
+              <Input name={'minutes'} label={'Minutes'}/>
               
               <div className={classes.Result}>
                 <div className={classes.ResultItem}>{calcCharge()} RUB</div>
