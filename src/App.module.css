@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.Form {
+  width: 100%;
+  max-width: 360px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.Line {
+  margin-bottom: 25px;
+}
+
+.Label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.Input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  outline: none;
+}
+
+.Result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ResultItem {
+  margin-bottom: 10px;
+  text-align: center;
+}
